@@ -44,3 +44,4 @@ function removeItem(index) {
 }
 
 updateCart();
+
