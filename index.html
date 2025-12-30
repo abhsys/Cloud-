@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopCart</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <h2>ShopCart</h2>
+    <div class="cart-count">🛒 <span id="count">0</span></div>
+</nav>
+
+<section class="products">
+    <h2>Products</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="images\headphones.png" alt="Headphones">
+            <h3>Wireless Headphones</h3>
+            <p class="price">₹2499</p>
+            <button onclick="addToCart('Wireless Headphones',2499)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images\watch.png" alt="Smart Watch">
+            <h3>Smart Watch</h3>
+            <p class="price">₹3999</p>
+            <button onclick="addToCart('Smart Watch',3999)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images\speaker.png" alt="Speaker">
+            <h3>Bluetooth Speaker</h3>
+            <p class="price">₹1799</p>
+            <button onclick="addToCart('Bluetooth Speaker',1799)">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="cart">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <h3>Total: ₹<span id="total">0</span></h3>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
