@@ -5,49 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShopCart</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- Navbar -->
 <nav class="navbar">
-    <h2>ShopCart</h2>
-    <div class="cart-count">🛒 <span id="count">0</span></div>
+    <h1>🛍️ ShopCart</h1>
+    <div class="cart-badge">
+        Cart <span id="count">0</span>
+    </div>
 </nav>
 
+<!-- Hero -->
+<section class="hero">
+    <h2>Smart Shopping Starts Here</h2>
+    <p>Discover premium gadgets with a smooth shopping experience</p>
+</section>
+
+<!-- Products -->
 <section class="products">
-    <h2>Products</h2>
+    <h2 class="section-title">Featured Products</h2>
 
     <div class="product-grid">
 
         <div class="product-card">
-            <img src="images\headphones.png" alt="Headphones">
+            <img src="images\headphones.png">
             <h3>Wireless Headphones</h3>
-            <p class="price">₹2499</p>
+            <p class="price">₹2,499</p>
             <button onclick="addToCart('Wireless Headphones',2499)">Add to Cart</button>
         </div>
 
         <div class="product-card">
-            <img src="images\watch.png" alt="Smart Watch">
+            <img src="images\watch.png">
             <h3>Smart Watch</h3>
-            <p class="price">₹3999</p>
+            <p class="price">₹3,999</p>
             <button onclick="addToCart('Smart Watch',3999)">Add to Cart</button>
         </div>
 
         <div class="product-card">
-            <img src="images\speaker.png" alt="Speaker">
+            <img src="images\speaker.png">
             <h3>Bluetooth Speaker</h3>
-            <p class="price">₹1799</p>
+            <p class="price">₹1,799</p>
             <button onclick="addToCart('Bluetooth Speaker',1799)">Add to Cart</button>
         </div>
 
     </div>
 </section>
 
+<!-- Cart -->
 <section class="cart">
     <h2>Your Cart</h2>
     <div id="cart-items"></div>
-    <h3>Total: ₹<span id="total">0</span></h3>
+    <div class="cart-total">
+        Total: ₹<span id="total">0</span>
+    </div>
 </section>
 
 <script src="script.js"></script>
